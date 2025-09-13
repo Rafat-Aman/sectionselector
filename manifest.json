@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Course Auto-Register",
+  "version": "1.1",
+  "description": "Automatically finds and registers for a course if a seat is available, with auto-refresh.",
+  "permissions": ["activeTab", "scripting", "storage", "alarms"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}
